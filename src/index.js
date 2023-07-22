@@ -1,12 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import App from "./App";
 
-import './index.css';
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+  typography: {
+    fontFamily: ["Open Sans", "Inter", "sans-serif"].join(",")
+  },
+  palette: {
+    primary: {
+      main: "#283C63"
+    },
+    secondary: {
+      main: "#928A97",
+      selected: "#F44336"
+    }
+  }
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

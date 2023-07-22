@@ -1,8 +1,13 @@
+import { Box } from "@mui/material";
+
+import Navbar from "./Components/Navigation/Navbar";
+import Home from "./Pages/Home";
+
 function App() {
   return (
-    <div className="App">
-      <p>My Portofolio</p>
-    </div>
+    <Box>
+      <Home />
+    </Box>
   );
 }
 
