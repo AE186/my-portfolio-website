@@ -29,9 +29,8 @@ function Navbar() {
   return (
     <Box
       sx={{
-        // bgcolor: "primary.main",
         bgcolor: bgcolor,
-        color: "secondary.main",
+        color: "white",
         height: "15vh",
         width: "100%",
         position: "fixed",
@@ -44,7 +43,7 @@ function Navbar() {
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "home" ? "secondary.selected" : ""
+            color: selected === "home" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >
@@ -55,29 +54,29 @@ function Navbar() {
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "about" ? "secondary.selected" : ""
+            color: selected === "about" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >
           About
         </Typography>
         <Typography
-          id="skills"
+          id="technologies"
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "skills" ? "secondary.selected" : ""
+            color: selected === "technologies" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >
-          Skills
+          Technologies
         </Typography>
         <Typography
           id="work"
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "work" ? "secondary.selected" : ""
+            color: selected === "work" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >
@@ -88,7 +87,7 @@ function Navbar() {
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "contact" ? "secondary.selected" : ""
+            color: selected === "contact" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >

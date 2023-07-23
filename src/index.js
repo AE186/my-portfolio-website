@@ -11,11 +11,11 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#283C63"
+      main: "#283C63",
+      lighter: "#928A97"
     },
     secondary: {
-      main: "#928A97",
-      selected: "#F44336"
+      main: "#F44336"
     }
   }
 });

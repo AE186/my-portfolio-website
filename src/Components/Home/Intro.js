@@ -92,7 +92,7 @@ function Intro() {
           </Box>
         </Box>
       </Container>
-      <Container sx={{ mt: "auto", mb: 2 }}>
+      <Container sx={{ mt: "auto", mb: 6 }}>
         <Typography variant="subtitle1">
           <FontAwesomeIcon
             icon={faAnglesDown}
