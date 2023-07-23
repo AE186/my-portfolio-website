@@ -72,15 +72,15 @@ function Navbar() {
           Technologies
         </Typography>
         <Typography
-          id="work"
+          id="projects"
           variant={"h6"}
           sx={{
             ...navBtnStyle,
-            color: selected === "work" ? "secondary.main" : ""
+            color: selected === "projects" ? "secondary.main" : ""
           }}
           onClick={handleOptChange}
         >
-          Work
+          Projects
         </Typography>
         <Typography
           id="contact"

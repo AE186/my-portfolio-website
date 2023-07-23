@@ -4,7 +4,7 @@ import AboutMe from "../Components/Home/AboutMe";
 import Contact from "../Components/Home/Contact";
 import Intro from "../Components/Home/Intro";
 import Skills from "../Components/Home/Skills";
-import Work from "../Components/Home/Work";
+import Projects from "../Components/Home/Projects";
 import Navbar from "../Components/Navigation/Navbar";
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
       <Intro />
       <AboutMe />
       <Skills />
-      <Work />
+      <Projects />
       <Contact />
     </Box>
   );
