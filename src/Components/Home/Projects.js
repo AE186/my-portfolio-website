@@ -23,7 +23,10 @@ function Projects() {
   }
 
   return (
-    <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box
+      sx={{ height: "100vh", display: "flex", flexDirection: "column" }}
+      id="project"
+    >
       <Box
         sx={{
           height: "75vh",

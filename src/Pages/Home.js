@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import { useSelector } from "react-redux";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import AboutMe from "../Components/Home/AboutMe";
 import Contact from "../Components/Home/Contact";
 import Intro from "../Components/Home/Intro";
@@ -31,7 +31,7 @@ function Home() {
       <Navbar />
       <Intro />
       <AboutMe />
-      <Skills />
+      <Skills  />
       <Projects />
       <Contact />
     </Box>

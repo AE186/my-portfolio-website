@@ -6,7 +6,10 @@ import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 
 function AboutMe() {
   return (
-    <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box
+      sx={{ height: "100vh", display: "flex", flexDirection: "column" }}
+      id="about-me"
+    >
       <Container
         sx={{
           height: "65vh",
@@ -41,9 +44,9 @@ function AboutMe() {
             variant="body1"
             sx={{ my: 4 }}
           >
-            An inquisitive Computer Science student, skilled in
-            leadership, seeking to leverage solid development skills with focus
-            on collaboration, communication and passion.
+            An inquisitive Computer Science student, skilled in leadership,
+            seeking to leverage solid development skills with focus on
+            collaboration, communication and passion.
           </Typography>
           <Button
             variant="contained"

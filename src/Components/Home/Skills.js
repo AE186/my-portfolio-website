@@ -8,7 +8,10 @@ import SkillProgress from "../Skills/SkillProgress";
 
 function Skills() {
   return (
-    <Box sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
+    <Box
+      sx={{ height: "100vh", display: "flex", flexDirection: "column" }}
+      id="technology"
+    >
       <Container
         sx={{
           height: "65vh",
@@ -58,7 +61,7 @@ function Skills() {
           })}
         </Box>
       </Container>
-      <Box sx={{ mt: "auto", mb: 10, textAlign: "center" }}>
+      <Box sx={{ mt: "auto", mb: 6, textAlign: "center" }}>
         <Typography variant="subtitle1">
           <FontAwesomeIcon
             icon={faAnglesDown}

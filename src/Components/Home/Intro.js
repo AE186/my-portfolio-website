@@ -8,6 +8,7 @@ import React from "react";
 function Intro() {
   return (
     <Box
+      id="cover"
       sx={{
         height: "100vh",
         color: "white",

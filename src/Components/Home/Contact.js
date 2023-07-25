@@ -62,6 +62,7 @@ function Contact() {
         alignItems: "center",
         p: 8
       }}
+      id="contact-me"
     >
       <Container
         sx={{

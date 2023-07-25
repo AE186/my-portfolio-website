@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React, { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const [selected, setSelected] = useState("home");
@@ -20,7 +21,10 @@ function Navbar() {
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
-  const navBtnStyle = { cursor: "pointer", fontWeight: "500" };
+  const navBtnStyle = {
+    cursor: "pointer",
+    fontWeight: "500"
+  };
 
   function handleOptChange(e) {
     setSelected(e.target.id);
@@ -34,65 +38,100 @@ function Navbar() {
         height: "15vh",
         width: "100%",
         position: "fixed",
-        zIndex: "100"
+        zIndex: "100",
+        transition: "0.3s all"
       }}
     >
       <Container sx={{ display: "flex", gap: 8, py: 4 }}>
-        <Typography
-          id="home"
-          variant={"h6"}
-          sx={{
-            ...navBtnStyle,
-            color: selected === "home" ? "secondary.main" : ""
-          }}
-          onClick={handleOptChange}
+        <Link
+          smooth
+          to="/#cover"
+          style={{ textDecoration: "none" }}
         >
-          Home
-        </Typography>
-        <Typography
-          id="about"
-          variant={"h6"}
-          sx={{
-            ...navBtnStyle,
-            color: selected === "about" ? "secondary.main" : ""
-          }}
-          onClick={handleOptChange}
+          <Typography
+            id="home"
+            variant={"h6"}
+            sx={{
+              ...navBtnStyle,
+              color: selected === "home" ? "secondary.main" : "white"
+            }}
+            onClick={handleOptChange}
+          >
+            Home
+          </Typography>
+        </Link>
+
+        <Link
+          smooth
+          to="/#about-me"
+          style={{ textDecoration: "none" }}
         >
-          About
-        </Typography>
-        <Typography
-          id="technologies"
-          variant={"h6"}
-          sx={{
-            ...navBtnStyle,
-            color: selected === "technologies" ? "secondary.main" : ""
-          }}
-          onClick={handleOptChange}
+          <Typography
+            id="about"
+            variant={"h6"}
+            sx={{
+              ...navBtnStyle,
+              color: selected === "about" ? "secondary.main" : "white"
+            }}
+            onClick={handleOptChange}
+          >
+            About
+          </Typography>
+        </Link>
+
+        <Link
+          smooth
+          to="/#technology"
+          style={{ textDecoration: "none" }}
         >
-          Technologies
-        </Typography>
-        <Typography
-          id="projects"
-          variant={"h6"}
-          sx={{
-            ...navBtnStyle,
-            color: selected === "projects" ? "secondary.main" : ""
-          }}
-          onClick={handleOptChange}
+          <Typography
+            id="technologies"
+            variant={"h6"}
+            sx={{
+              ...navBtnStyle,
+              color: selected === "technologies" ? "secondary.main" : "white"
+            }}
+            onClick={handleOptChange}
+          >
+            Technologies
+          </Typography>
+        </Link>
+
+        <Link
+          smooth
+          to="/#project"
+          style={{ textDecoration: "none" }}
         >
-          Projects
-        </Typography>
-        <Typography
-          id="contact"
-          variant={"h6"}
-          sx={{
-            ...navBtnStyle,
-            color: selected === "contact" ? "secondary.main" : ""
-          }}
-          onClick={handleOptChange}
+          <Typography
+            id="projects"
+            variant={"h6"}
+            sx={{
+              ...navBtnStyle,
+              color: selected === "projects" ? "secondary.main" : "white"
+            }}
+            onClick={handleOptChange}
+          >
+            Projects
+          </Typography>
+        </Link>
+
+        <Link
+          smooth
+          to="#contact-me"
+          style={{ textDecoration: "none" }}
         >
-          Contact
-        </Typography>
+          <Typography
+            id="contact"
+            variant={"h6"}
+            sx={{
+              ...navBtnStyle,
+              color: selected === "contact" ? "secondary.main" : "white"
+            }}
+            onClick={handleOptChange}
+          >
+            Contact
+          </Typography>
+        </Link>
       </Container>
     </Box>
   );
