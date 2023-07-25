@@ -66,6 +66,7 @@ function Projects() {
             <a
               href={proj.link}
               target="_blank"
+              rel='noreferrer'
             >
               <Button
                 variant="contained"
@@ -79,6 +80,7 @@ function Projects() {
             <a
               href={proj.link}
               target="_blank"
+              rel='noreferrer'
             >
               <FontAwesomeIcon
                 icon={faGithub}

@@ -42,6 +42,7 @@ function Intro() {
             <a
               href="https://github.com/AE186"
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -52,6 +53,7 @@ function Intro() {
             <a
               href="https://www.linkedin.com/in/saad-vohra/"
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}

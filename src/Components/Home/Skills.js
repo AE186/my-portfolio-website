@@ -1,6 +1,6 @@
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { LinearProgress, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import skills from "../../store/skills";
