@@ -1,6 +1,5 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
-  faAnglesDown,
   faChevronLeft,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
@@ -46,13 +45,19 @@ function Projects() {
           sx={{
             width: "40vw",
             display: "flex",
-            flexDirection: "column"
+            flexDirection: "column",
+            cursor: "grab"
           }}
         >
           <Box
             component="img"
             src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03fdb466-60c7-4df2-8aeb-8f9f008d2afa/db8o23g-c69fffc4-ad01-4d0a-8add-832de1a26de7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzZmRiNDY2LTYwYzctNGRmMi04YWViLThmOWYwMDhkMmFmYVwvZGI4bzIzZy1jNjlmZmZjNC1hZDAxLTRkMGEtOGFkZC04MzJkZTFhMjZkZTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u2KXFJm5O_QWDqHAScT-QTWe_pwrUaCubl4UMxl1Gw0"
-            sx={{ height: "35vh", mx: "auto" }}
+            sx={{
+              height: "35vh",
+              mx: "auto",
+              "&:hover": { transform: "scale(1.1)", transition: "1s all" },
+              transition: "1s all"
+            }}
           />
           <Typography
             variant="h5"
@@ -66,12 +71,12 @@ function Projects() {
             <a
               href={proj.link}
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               <Button
                 variant="contained"
                 color="primary"
-                sx={{ width: "7rem" }}
+                sx={{ width: "7rem", borderRadius: 5 }}
               >
                 Visit Site
               </Button>
@@ -80,7 +85,7 @@ function Projects() {
             <a
               href={proj.link}
               target="_blank"
-              rel='noreferrer'
+              rel="noreferrer"
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -97,7 +102,7 @@ function Projects() {
           onClick={handleNext}
         />
       </Box>
-      <Box sx={{ mt: "auto", mb: 12, textAlign: "center" }}>
+      {/* <Box sx={{ mt: "auto", mb: 12, textAlign: "center" }}>
         <Typography variant="subtitle1">
           <FontAwesomeIcon
             icon={faAnglesDown}
@@ -105,7 +110,7 @@ function Projects() {
           />{" "}
           Scroll
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
