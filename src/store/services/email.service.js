@@ -6,7 +6,7 @@ const sendEmail = (name, email, message) => {
     {
       service_id: process.env.REACT_APP_Email_service_id,
       template_id: process.env.REACT_APP_Email_template_id,
-      user_id: process.env.REACT_APP_Email_service_id,
+      user_id: process.env.REACT_APP_Email_user_id,
       template_params: {
         name,
         email,
